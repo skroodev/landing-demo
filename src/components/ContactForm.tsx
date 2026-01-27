@@ -56,7 +56,7 @@ export function ContactForm() {
       // À titre démonstratif, on montre juste un message de remerciement
       setSubmitMessage({ 
         type: "success", 
-        text: `Merci ${values.name}! À titre démonstratif, veuillez nous contacter directement au ${siteConfig.contact.phone} ou par email à ${siteConfig.contact.email}` 
+        text: `Merci ${values.name}! 🎉\n\n📝 Ce site est à titre démonstratif. Le formulaire est un exemple fonctionnel et n'envoie pas vraiment de message.` 
       });
       form.reset();
     } catch (error) {

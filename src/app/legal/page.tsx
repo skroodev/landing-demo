@@ -63,7 +63,7 @@ export default function Legal() {
               {siteConfig.footer.companyName} est titulaire des certifications suivantes:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              {siteConfig.footer.certifications.map((cert, idx) => (
+              {siteConfig.footer.certifications.map((cert: string, idx: number) => (
                 <li key={idx}>{cert}</li>
               ))}
             </ul>

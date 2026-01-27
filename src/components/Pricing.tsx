@@ -49,7 +49,7 @@ export function Pricing() {
               </div>
 
               <Button
-                className="w-full"
+                className="w-full transition-transform duration-200 hover:scale-105"
                 style={{
                   backgroundColor: pkg.highlighted ? siteConfig.colors.secondary : siteConfig.colors.primary,
                 }}

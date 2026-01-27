@@ -16,14 +16,14 @@ export function CTAFinal() {
             size="lg"
             onClick={() => window.location.href = siteConfig.ctaFinal.primaryButton.link}
             style={{ backgroundColor: siteConfig.colors.secondary }}
-            className="text-white"
+            className="text-white transition-transform duration-200 hover:scale-105"
           >
             {siteConfig.ctaFinal.primaryButton.text}
           </Button>
           <Button
             size="lg"
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-            className="!border-2 !border-white !text-white bg-transparent hover:!bg-white hover:!text-blue-600"
+            className="!border-2 !border-white !text-white bg-transparent hover:!bg-white hover:!text-blue-600 transition-transform duration-200 hover:scale-105"
           >
             {siteConfig.ctaFinal.secondaryButton.text}
           </Button>

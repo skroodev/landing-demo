@@ -34,7 +34,7 @@ export function Navigation() {
             </a>
             <Button
               onClick={() => window.location.href = `tel:${siteConfig.business.phone}`}
-              className="ml-4"
+              className="ml-4 transition-transform duration-200 hover:scale-105"
               style={{ backgroundColor: siteConfig.colors.secondary }}
             >
               {siteConfig.hero.cta.text}
@@ -70,7 +70,7 @@ export function Navigation() {
             </a>
             <Button
               onClick={() => window.location.href = `tel:${siteConfig.business.phone}`}
-              className="w-full"
+              className="w-full transition-transform duration-200 hover:scale-105"
               style={{ backgroundColor: siteConfig.colors.secondary }}
             >
               {siteConfig.hero.cta.text}

@@ -28,6 +28,7 @@ export function Hero() {
               <Button
                 size="lg"
                 onClick={() => window.location.href = siteConfig.hero.cta.link}
+                className="transition-transform duration-200 hover:scale-105"
                 style={{ backgroundColor: siteConfig.colors.secondary }}
               >
                 {siteConfig.hero.cta.text}
@@ -35,7 +36,7 @@ export function Hero() {
               <Button
                 size="lg"
                 onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                className="!border-2 !text-blue-600"
+                className="!border-2 !text-blue-600 transition-transform duration-200 hover:scale-105"
                 style={{
                   borderColor: siteConfig.colors.primary,
                   backgroundColor: "transparent",

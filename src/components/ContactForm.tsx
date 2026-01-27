@@ -188,7 +188,7 @@ export function ContactForm() {
             <Button
               type="submit"
               disabled={isLoading}
-              className="w-full"
+              className="w-full transition-transform duration-200 hover:scale-105 disabled:hover:scale-100"
               style={{ backgroundColor: siteConfig.colors.primary }}
             >
               {isLoading ? "Envoi en cours..." : siteConfig.contact.submitButtonText}

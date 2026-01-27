@@ -85,7 +85,7 @@ export function SocialProof() {
 
                   <div className="flex items-center gap-3 mt-6">
                     <Image
-                      src={`/images/avatar-${avatarName}.png`}
+                      src={`/images/webp/avatar-${avatarName}.webp`}
                       alt={testimonial.author}
                       width={40}
                       height={40}

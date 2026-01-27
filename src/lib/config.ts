@@ -76,7 +76,7 @@ export const siteConfig = {
       variant: "primary",
     },
     image: {
-      src: "/images/hero-plumber-at-work.png",
+      src: "/images/webp/hero-plumber-at-work.webp",
       alt: "Plombier intervenant chez un client",
     },
     badge: {
@@ -152,8 +152,8 @@ export const siteConfig = {
       title: "Dépannage d'urgence",
       description: "Fuite d'eau, robinet cassé, canalisation bouchée. Intervention rapide 24/7 avec tarification transparente.",
       images: {
-        before: { src: "/images/service1-before-leak.png", alt: "Fuite d'eau visible" },
-        after: { src: "/images/service1-after-repaired.png", alt: "Réparation complète" },
+        before: { src: "/images/webp/service1-before-leak.webp", alt: "Fuite d'eau visible" },
+        after: { src: "/images/webp/service1-after-repaired.webp", alt: "Réparation complète" },
       },
     },
     {
@@ -161,8 +161,8 @@ export const siteConfig = {
       title: "Rénovation salle de bain",
       description: "Installation complète: tuyauterie, robinetterie, douche. Transformation spectaculaire.",
       images: {
-        before: { src: "/images/service2-before-old-bathroom.png", alt: "Salle de bain ancienne" },
-        after: { src: "/images/service2-after-modern-bathroom.png", alt: "Salle de bain moderne" },
+        before: { src: "/images/webp/service2-before-old-bathroom.webp", alt: "Salle de bain ancienne" },
+        after: { src: "/images/webp/service2-after-modern-bathroom.webp", alt: "Salle de bain moderne" },
       },
     },
     {
@@ -170,8 +170,8 @@ export const siteConfig = {
       title: "Installation chauffage",
       description: "Remplacement chaudière, installation radiateurs, tuyauterie. Système performant.",
       images: {
-        before: { src: "/images/service3-before-old-heater.png", alt: "Vieille chaudière" },
-        after: { src: "/images/service3-after-new-heater.png", alt: "Nouvelle chaudière" },
+        before: { src: "/images/webp/service3-before-old-heater.webp", alt: "Vieille chaudière" },
+        after: { src: "/images/webp/service3-after-new-heater.webp", alt: "Nouvelle chaudière" },
       },
     },
   ],
@@ -372,7 +372,7 @@ export const siteConfig = {
   seo: {
     title: "Plombier Cannes 24/7 - Dépannage d'urgence en moins d'1h",
     description: "Plombier professionnel à Cannes. Dépannage d'urgence 24/7 en moins d'1h. 15 ans d'expertise. Garantie 10 ans.",
-    ogImage: "/images/og-image.png",
+    ogImage: "/images/webp/og-image.webp",
     ogImageAlt: "Plomberie Martin - Expert en plomberie à Cannes",
   },
 };

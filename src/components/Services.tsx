@@ -27,6 +27,7 @@ export function Services() {
                         alt={service.images.before.alt}
                         fill
                         className="object-cover"
+                        loading="lazy"
                         unoptimized
                       />
                     </div>
@@ -41,6 +42,7 @@ export function Services() {
                         alt={service.images.after.alt}
                         fill
                         className="object-cover"
+                        loading="lazy"
                         unoptimized
                       />
                     </div>

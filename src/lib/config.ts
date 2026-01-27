@@ -288,6 +288,8 @@ export const siteConfig = {
   // FORMULAIRE DE CONTACT (RGPD)
   contact: {
     show: true,
+    phone: siteConfig.business.phone,
+    email: siteConfig.business.email,
     headline: "Demander un devis gratuit",
     subheadline: "Remplissez le formulaire ci-dessous. Nous vous répondrons dans les 2 heures.",
     submitButtonText: "Envoyer ma demande",

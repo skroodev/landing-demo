@@ -21,7 +21,7 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Certifications</h3>
             <ul className="space-y-2 text-sm text-gray-300">
-              {siteConfig.footer.certifications.map((cert, idx) => (
+              {siteConfig.footer.certifications.map((cert: string, idx: number) => (
                 <li key={idx}>✓ {cert}</li>
               ))}
             </ul>

@@ -12,11 +12,11 @@ export function Navigation() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center">
+          <a href="#" className="flex items-center hover:opacity-80 transition-opacity">
             <h1 className="text-2xl font-bold" style={{ color: siteConfig.colors.primary }}>
               {siteConfig.business.name}
             </h1>
-          </div>
+          </a>
 
           {/* Menu Desktop */}
           <div className="hidden md:flex gap-6 items-center">

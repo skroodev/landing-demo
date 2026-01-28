@@ -5,7 +5,7 @@ export const siteConfig = {
     tagline: "Dépannage 24/7 - Cannes et région",
     description: "Expert en plomberie depuis 15 ans. Dépannage d'urgence, installation, rénovation. Intervention rapide garantie en moins d'1h.",
     type: "Plomberie",
-    phone: "+33 6 12 34 56 78",
+    phone: "+33 6 07 08 09 10",
     email: "contact@plomberie-martin.fr",
     address: "123 Rue de Paris, 06400 Cannes",
     serviceArea: "Cannes, Antibes, Mougins, Grasse",
@@ -68,11 +68,11 @@ export const siteConfig = {
 
   // HÉRO SECTION
   hero: {
-    headline: "Fuite d'eau? Dépannage 24/7 en moins d'1h",
+    headline: "Fuite d'eau? Dépannage 24/7 en moins d'une heure",
     subheadline: "Plombier professionnel à Cannes - 15 ans d'expertise - Intervention rapide garantie",
     cta: {
       text: "Appeler maintenant",
-      link: "tel:+33612345678",
+      link: "tel:+33607080910",
       variant: "primary",
     },
     image: {
@@ -81,7 +81,7 @@ export const siteConfig = {
     },
     badge: {
       show: true,
-      text: "✅ Intervention garantie en moins d'1h",
+      text: "✓ Intervention garantie en moins d'une heure",
     },
   },
 
@@ -141,7 +141,7 @@ export const siteConfig = {
       title: "Réparation & suivi",
       description: "Travail professionnel avec garantie décennale.",
       details: "Travaux réalisés, site nettoyé. Facture détaillée. Vous restez en contact pour le suivi.",
-      icon: "✅",
+      icon: "✓",
     },
   ],
 
@@ -282,7 +282,7 @@ export const siteConfig = {
       text: "Demander un devis",
       link: "#contact",
     },
-    reassurance: "✅ Intervention garantie en moins d'1h | ✅ Tarifs transparents | ✅ Garantie 10 ans",
+    reassurance: "✓ Intervention garantie en moins d'1h | ✓ Tarifs transparents | ✓ Garantie 10 ans",
   },
 
   // FORMULAIRE DE CONTACT (RGPD)
@@ -291,7 +291,7 @@ export const siteConfig = {
     headline: "Demander un devis gratuit",
     subheadline: "Remplissez le formulaire ci-dessous. Nous vous répondrons dans les 2 heures.",
     submitButtonText: "Envoyer ma demande",
-    successMessage: "✅ Merci! Nous avons reçu votre demande. Nous vous recontacterons sous 2h.",
+    successMessage: "✓ Merci! Nous avons reçu votre demande. Nous vous recontacterons sous 2h.",
     errorMessage: "❌ Une erreur est survenue. Veuillez réessayer ou appeler directement.",
     fields: [
       {
@@ -361,9 +361,9 @@ export const siteConfig = {
       google: "https://maps.google.com/?q=Plomberie+Martin+Cannes",
     },
     links: [
-      { label: "Politique de confidentialité", href: "/privacy" },
-      { label: "Mentions légales", href: "/legal" },
-      { label: "Conditions générales", href: "/cgu" },
+      { label: "Politique de confidentialité", href: "#" },
+      { label: "Mentions légales", href: "#" },
+      { label: "Conditions générales", href: "#" },
     ],
     copyright: "© 2024 Plomberie Martin. Tous droits réservés.",
   },

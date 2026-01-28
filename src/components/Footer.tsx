@@ -4,7 +4,7 @@ import siteConfig from "@/lib/config";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="text-white py-12" style={{ backgroundColor: siteConfig.colors.primaryDark }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Entreprise */}
@@ -65,7 +65,7 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+        <div className="border-t pt-8 text-center text-sm text-gray-200" style={{ borderColor: `${siteConfig.colors.primaryLight}40` }}>
           {siteConfig.footer.copyright}
         </div>
       </div>

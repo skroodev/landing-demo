@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
+import AnimatedContent from "@/components/AnimatedContent";
 import {
   Form,
   FormControl,
@@ -68,91 +69,102 @@ export function ContactForm() {
 
   return (
     <section id="contact" className="py-12 md:py-20 bg-white">
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-4">{siteConfig.contact.headline}</h2>
-        <p className="text-center text-gray-600 mb-8">{siteConfig.contact.subheadline}</p>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AnimatedContent distance={50} direction="up" duration={0.4}>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">{siteConfig.contact.headline}</h2>
+          <p className="text-center text-gray-600 mb-8">{siteConfig.contact.subheadline}</p>
+        </AnimatedContent>
 
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-            {/* Nom */}
-            <FormField
-              control={form.control}
-              name="name"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Votre nom complet</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Jean Dupont" {...field} disabled={isLoading} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+        <AnimatedContent distance={40} direction="up" duration={0.4} delay={0.1}>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Colonne 1: Nom, Email, Téléphone */}
+                <div className="space-y-6">
+                  {/* Nom */}
+                  <FormField
+                    control={form.control}
+                    name="name"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Votre nom complet</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Jean Dupont" {...field} disabled={isLoading} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
-            {/* Email */}
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Votre email</FormLabel>
-                  <FormControl>
-                    <Input type="email" placeholder="jean@example.com" {...field} disabled={isLoading} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+                  {/* Email */}
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Votre email</FormLabel>
+                        <FormControl>
+                          <Input type="email" placeholder="jean@example.com" {...field} disabled={isLoading} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
-            {/* Téléphone */}
-            <FormField
-              control={form.control}
-              name="phone"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Numéro de téléphone</FormLabel>
-                  <FormControl>
-                    <Input type="tel" placeholder="+33 6 12 34 56 78" {...field} disabled={isLoading} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+                  {/* Téléphone */}
+                  <FormField
+                    control={form.control}
+                    name="phone"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Numéro de téléphone</FormLabel>
+                        <FormControl>
+                          <Input type="tel" placeholder="+33 6 12 34 56 78" {...field} disabled={isLoading} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
 
-            {/* Sujet */}
-            <FormField
-              control={form.control}
-              name="subject"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Type de problème</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Ex: Fuite d'eau, rénovation salle de bain" {...field} disabled={isLoading} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+                {/* Colonne 2: Type de problème et Message */}
+                <div className="space-y-6">
+                  {/* Sujet */}
+                  <FormField
+                    control={form.control}
+                    name="subject"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Type de problème</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Ex: Fuite d'eau, rénovation salle de bain" {...field} disabled={isLoading} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
 
-            {/* Message */}
-            <FormField
-              control={form.control}
-              name="message"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Décrivez votre situation</FormLabel>
-                  <FormControl>
-                    <Textarea
-                      placeholder="Décrivez en détail (localisation, urgence, budget)"
-                      {...field}
-                      disabled={isLoading}
-                      rows={5}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+                  {/* Message */}
+                  <FormField
+                    control={form.control}
+                    name="message"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Décrivez votre situation</FormLabel>
+                        <FormControl>
+                          <Textarea
+                            placeholder="Décrivez en détail (localisation, urgence, budget)"
+                            {...field}
+                            disabled={isLoading}
+                            rows={5}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+              </div>
 
             {/* RGPD Consent */}
             <FormField
@@ -193,8 +205,9 @@ export function ContactForm() {
             >
               {isLoading ? "Envoi en cours..." : siteConfig.contact.submitButtonText}
             </Button>
-          </form>
-        </Form>
+            </form>
+          </Form>
+        </AnimatedContent>
       </div>
     </section>
   );

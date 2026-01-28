@@ -8,7 +8,7 @@ export function WhoIsThis() {
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <AnimatedContent distance={50} direction="up" duration={0.4}>
+        <AnimatedContent distance={50} direction="vertical" duration={0.4}>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">À qui s'adresse notre service?</h2>
         </AnimatedContent>
 
@@ -21,7 +21,7 @@ export function WhoIsThis() {
                 <AnimatedContent 
                   key={index} 
                   distance={20} 
-                  direction="left" 
+                  direction="horizontal" 
                   duration={0.35}
                   delay={index * 0.04}
                 >
@@ -41,7 +41,7 @@ export function WhoIsThis() {
                 <AnimatedContent 
                   key={index} 
                   distance={20} 
-                  direction="right" 
+                  direction="horizontal" 
                   duration={0.35}
                   delay={index * 0.04}
                 >

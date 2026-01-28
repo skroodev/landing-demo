@@ -14,7 +14,7 @@ export function SocialProof() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Statistiques */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <AnimatedContent distance={40} direction="up" duration={0.4}>
+          <AnimatedContent distance={40} direction="vertical" duration={0.4}>
             <div className="text-center">
               <h3 className="text-4xl font-bold" style={{ color: siteConfig.colors.primary }}>
                 <CountUp to={siteConfig.socialProof.clientCount} separator="," duration={0.15} />+
@@ -24,7 +24,7 @@ export function SocialProof() {
             </div>
           </AnimatedContent>
 
-          <AnimatedContent distance={40} direction="up" duration={0.4} delay={0.08}>
+          <AnimatedContent distance={40} direction="vertical" duration={0.4} delay={0.08}>
             <div className="text-center">
               <h3 className="text-4xl font-bold" style={{ color: siteConfig.colors.primary }}>
                 <CountUp to={parseFloat(siteConfig.socialProof.averageRating.toString())} duration={0.15} />★
@@ -34,7 +34,7 @@ export function SocialProof() {
             </div>
           </AnimatedContent>
 
-          <AnimatedContent distance={40} direction="up" duration={0.4} delay={0.16}>
+          <AnimatedContent distance={40} direction="vertical" duration={0.4} delay={0.16}>
             <div className="text-center">
               <h3 className="text-4xl font-bold" style={{ color: siteConfig.colors.primary }}>
                 24/7
@@ -47,7 +47,7 @@ export function SocialProof() {
 
         {/* Testimonials */}
         <div>
-          <AnimatedContent distance={50} direction="up" duration={0.4}>
+          <AnimatedContent distance={50} direction="vertical" duration={0.4}>
             <h2 className="text-3xl font-bold text-center mb-12">
               <SplitText
                 text={`${siteConfig.socialProof.clientCount}+ clients nous font confiance`}

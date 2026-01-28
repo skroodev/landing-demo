@@ -13,7 +13,7 @@ export function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Contenu */}
-          <AnimatedContent distance={50} direction="up" duration={0.4}>
+          <AnimatedContent distance={50} direction="vertical" duration={0.4}>
             <div>
               {siteConfig.hero.badge.show && (
                 <Badge className="mb-4 px-1.5 py-1 text-white border-0" style={{ backgroundColor: siteConfig.colors.success }}>
@@ -25,11 +25,11 @@ export function Hero() {
                 {siteConfig.hero.headline}
               </h1>
 
-              <AnimatedContent distance={30} direction="up" duration={0.5} delay={0.15}>
+              <AnimatedContent distance={30} direction="vertical" duration={0.5} delay={0.15}>
                 <p className="text-lg text-gray-600 mb-8">{siteConfig.hero.subheadline}</p>
               </AnimatedContent>
 
-              <AnimatedContent distance={30} direction="up" duration={0.5} delay={0.25}>
+              <AnimatedContent distance={30} direction="vertical" duration={0.5} delay={0.25}>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <GlareHover
                     glareColor="#ffffff"
@@ -66,7 +66,7 @@ export function Hero() {
           </AnimatedContent>
 
           {/* Image Hero */}
-          <AnimatedContent distance={50} direction="right" duration={0.4}>
+          <AnimatedContent distance={50} direction="horizontal" duration={0.4}>
             <div className="relative h-96 md:h-full min-h-96 bg-gray-200 rounded-lg overflow-hidden">
               <Image
                 src={siteConfig.hero.image.src}

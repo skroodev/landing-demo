@@ -10,7 +10,7 @@ export function ProblemSolution() {
         <div className="grid md:grid-cols-2 gap-16">
           {/* Problèmes */}
           <div className="flex flex-col">
-            <AnimatedContent distance={50} direction="left" duration={0.4}>
+            <AnimatedContent distance={50} direction="horizontal" duration={0.4}>
               <h2 className="text-3xl md:text-4xl font-bold mb-12 min-h-24" style={{ color: siteConfig.colors.text }}>
                 {siteConfig.problemSolution.problem.headline}
               </h2>
@@ -20,7 +20,7 @@ export function ProblemSolution() {
                 <AnimatedContent 
                   key={index} 
                   distance={20} 
-                  direction="left" 
+                  direction="horizontal" 
                   duration={0.35}
                   delay={index * 0.04}
                 >
@@ -35,7 +35,7 @@ export function ProblemSolution() {
 
           {/* Solutions */}
           <div className="flex flex-col">
-            <AnimatedContent distance={50} direction="right" duration={0.4}>
+            <AnimatedContent distance={50} direction="horizontal" duration={0.4}>
               <h2 className="text-3xl md:text-4xl font-bold mb-12 min-h-24" style={{ color: siteConfig.colors.success }}>
                 {siteConfig.problemSolution.solution.headline}
               </h2>
@@ -45,7 +45,7 @@ export function ProblemSolution() {
                 <AnimatedContent 
                   key={index} 
                   distance={20} 
-                  direction="right" 
+                  direction="horizontal" 
                   duration={0.35}
                   delay={index * 0.04}
                 >

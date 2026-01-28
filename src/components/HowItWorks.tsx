@@ -8,7 +8,7 @@ export function HowItWorks() {
   return (
     <section id="how-it-works" className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <AnimatedContent distance={50} direction="up" duration={0.4}>
+        <AnimatedContent distance={50} direction="vertical" duration={0.4}>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Comment ça marche?</h2>
         </AnimatedContent>
 
@@ -17,7 +17,7 @@ export function HowItWorks() {
             <AnimatedContent 
               key={index} 
               distance={40} 
-              direction="up" 
+              direction="vertical" 
               duration={0.4}
               delay={index * 0.08}
             >

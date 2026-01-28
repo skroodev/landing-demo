@@ -13,7 +13,7 @@ export function Services() {
   return (
     <section id="services" className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <AnimatedContent distance={50} direction="up" duration={0.4}>
+        <AnimatedContent distance={50} direction="vertical" duration={0.4}>
           <h2 className="text-3xl font-bold text-center mb-12">Nos services en avant/après</h2>
         </AnimatedContent>
 
@@ -22,7 +22,7 @@ export function Services() {
             <AnimatedContent 
               key={service.id} 
               distance={40} 
-              direction={index % 2 === 0 ? "left" : "right"} 
+              direction={index % 2 === 0 ? "horizontal" : "horizontal"} 
               duration={0.4}
             >
               <Card className="overflow-hidden">

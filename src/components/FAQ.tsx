@@ -17,7 +17,7 @@ export function FAQ() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Questions fréquemment posées</h2>
         </AnimatedContent>
 
-        <AnimatedContent distance={40} direction="up" duration={0.4} delay={0.1}>
+        <AnimatedContent distance={40} direction="vertical" duration={0.4} delay={0.1}>
           <Accordion type="single" collapsible>
             {siteConfig.faq.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>

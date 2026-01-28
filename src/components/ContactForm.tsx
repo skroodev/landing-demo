@@ -75,7 +75,7 @@ export function ContactForm() {
           <p className="text-center text-gray-600 mb-8">{siteConfig.contact.subheadline}</p>
         </AnimatedContent>
 
-        <AnimatedContent distance={40} direction="up" duration={0.4} delay={0.1}>
+        <AnimatedContent distance={40} direction="vertical" duration={0.4} delay={0.1}>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">

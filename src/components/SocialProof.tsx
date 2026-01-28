@@ -77,7 +77,7 @@ export function SocialProof() {
                 <AnimatedContent 
                   key={index} 
                   distance={40} 
-                  direction="up" 
+                  direction="vertical" 
                   duration={0.8}
                   delay={index * 0.1}
                 >

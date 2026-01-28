@@ -54,8 +54,12 @@ export function Navigation() {
         </div>
 
         {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-3 border-t pt-4">
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="mt-4 pb-4 space-y-3 border-t pt-4">
             <a href="#services" className="block text-gray-700 hover:text-gray-900">
               Services
             </a>
@@ -76,7 +80,7 @@ export function Navigation() {
               {siteConfig.hero.cta.text}
             </Button>
           </div>
-        )}
+        </div>
       </nav>
     </header>
   );

@@ -68,7 +68,7 @@ export const siteConfig = {
 
   // HÉRO SECTION
   hero: {
-    headline: "Fuite d'eau? Dépannage 24/7 en moins d'une heure",
+    headline: "Fuite d'eau ? Dépannage 24/7 en moins d'une heure",
     subheadline: "Plombier professionnel à Cannes - 15 ans d'expertise - Intervention rapide garantie",
     cta: {
       text: "Appeler maintenant",

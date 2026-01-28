@@ -36,7 +36,7 @@ export const siteConfig = {
 
   // PREUVES SOCIALES
   socialProof: {
-    clientCount: 2147,
+    clientCount: 1500,
     clientLocation: "Cannes et région PACA",
     averageRating: 4.9,
     reviewCount: 156,

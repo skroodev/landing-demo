@@ -28,10 +28,11 @@ const StarBorder: React.FC<StarBorderProps> = ({
     // Animate stars around border
     points.forEach((point, index) => {
       gsap.to(point, {
-        opacity: [0, 1, 0],
+        opacity: 1,
         duration: 3 * (1 / speed),
         delay: (index * 0.1) / speed,
         repeat: -1,
+        yoyo: true,
         ease: "sine.inOut",
       });
     });

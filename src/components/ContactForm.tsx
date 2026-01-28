@@ -68,7 +68,7 @@ export function ContactForm() {
   }
 
   return (
-    <section id="contact" className="py-12 md:py-20 bg-white">
+    <section id="contact" className="py-12 md:py-20 bg-slate-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedContent distance={50} direction="vertical" duration={0.4}>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">{siteConfig.contact.headline}</h2>

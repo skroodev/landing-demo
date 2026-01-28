@@ -10,58 +10,82 @@ import siteConfig from "@/lib/config";
 
 export function SocialProof() {
   return (
-    <section className="py-12 md:py-20 bg-white">
+    <section className="py-12 md:py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Statistiques */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <AnimatedContent distance={40} direction="vertical" duration={0.4}>
-            <div className="text-center">
-              <h3 className="text-4xl font-bold" style={{ color: siteConfig.colors.primary }}>
-                <CountUp to={siteConfig.socialProof.clientCount} separator="," duration={0.15} />+
-              </h3>
-              <p className="text-gray-600 mt-2">Clients satisfaits</p>
-              <p className="text-sm text-gray-500">{siteConfig.socialProof.clientLocation}</p>
-            </div>
-          </AnimatedContent>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 gap-y-6 md:gap-8 mb-8 md:mb-12">
+          {/* Colonne gauche - Chiffres */}
+          <div className="col-span-1 md:col-span-3 flex flex-col md:grid md:grid-cols-3 gap-4 gap-y-6 md:gap-8 space-y-4 md:space-y-0">
+            <AnimatedContent distance={40} direction="vertical" duration={0.4}>
+              <div className="text-left md:text-center">
+                <h3 className="text-2xl md:text-4xl font-bold" style={{ color: siteConfig.colors.primary }}>
+                  <CountUp to={siteConfig.socialProof.clientCount} separator="," duration={0.15} />+
+                </h3>
+              </div>
+            </AnimatedContent>
 
-          <AnimatedContent distance={40} direction="vertical" duration={0.4} delay={0.08}>
-            <div className="text-center">
-              <h3 className="text-4xl font-bold" style={{ color: siteConfig.colors.primary }}>
-                <CountUp to={parseFloat(siteConfig.socialProof.averageRating.toString())} duration={0.15} />★
-              </h3>
-              <p className="text-gray-600 mt-2">Note moyenne</p>
-              <p className="text-sm text-gray-500">({siteConfig.socialProof.reviewCount} avis)</p>
-            </div>
-          </AnimatedContent>
+            <AnimatedContent distance={40} direction="vertical" duration={0.4} delay={0.08}>
+              <div className="text-left md:text-center">
+                <h3 className="text-2xl md:text-4xl font-bold" style={{ color: siteConfig.colors.primary }}>
+                  <CountUp to={parseFloat(siteConfig.socialProof.averageRating.toString())} duration={0.15} />★
+                </h3>
+              </div>
+            </AnimatedContent>
 
-          <AnimatedContent distance={40} direction="vertical" duration={0.4} delay={0.16}>
-            <div className="text-center">
-              <h3 className="text-4xl font-bold" style={{ color: siteConfig.colors.primary }}>
-                24/7
-              </h3>
-              <p className="text-gray-600 mt-2">Disponible</p>
-              <p className="text-sm text-gray-500">365 jours par an</p>
-            </div>
-          </AnimatedContent>
+            <AnimatedContent distance={40} direction="vertical" duration={0.4} delay={0.16}>
+              <div className="text-left md:text-center">
+                <h3 className="text-2xl md:text-4xl font-bold" style={{ color: siteConfig.colors.primary }}>
+                  24/7
+                </h3>
+              </div>
+            </AnimatedContent>
+          </div>
+
+          {/* Colonne droite - Textes */}
+          <div className="col-span-1 md:col-span-3 flex flex-col md:grid md:grid-cols-3 gap-4 gap-y-6 md:gap-8 space-y-4 md:space-y-0">
+            <AnimatedContent distance={40} direction="vertical" duration={0.4}>
+              <div className="text-left md:text-center">
+                <p className="text-gray-600 text-xs md:text-base">Clients satisfaits</p>
+                <p className="text-xs text-gray-500">{siteConfig.socialProof.clientLocation}</p>
+              </div>
+            </AnimatedContent>
+
+            <AnimatedContent distance={40} direction="vertical" duration={0.4} delay={0.08}>
+              <div className="text-left md:text-center">
+                <p className="text-gray-600 text-xs md:text-base">Note moyenne</p>
+                <p className="text-xs text-gray-500">({siteConfig.socialProof.reviewCount} avis)</p>
+              </div>
+            </AnimatedContent>
+
+            <AnimatedContent distance={40} direction="vertical" duration={0.4} delay={0.16}>
+              <div className="text-left md:text-center">
+                <p className="text-gray-600 text-xs md:text-base">Disponible</p>
+                <p className="text-xs text-gray-500">365 jours par an</p>
+              </div>
+            </AnimatedContent>
+          </div>
         </div>
 
         {/* Testimonials */}
         <div>
           <AnimatedContent distance={50} direction="vertical" duration={0.4}>
-            <h2 className="text-3xl font-bold text-center mb-12">
-              <SplitText
-                text={`${siteConfig.socialProof.clientCount}+ clients nous font confiance`}
-                className="text-3xl font-bold text-center"
-                delay={15}
-                duration={0.15}
-                ease="power3.out"
-                splitType="chars"
-                from={{ opacity: 0, y: 40 }}
-                to={{ opacity: 1, y: 0 }}
-                threshold={0.1}
-                rootMargin="-100px"
-                textAlign="center"
-              />
+            <h2 className="text-xl md:text-3xl font-bold text-center mb-8 md:mb-12">
+              <span className="hidden md:inline">
+                <SplitText
+                  text={`${siteConfig.socialProof.clientCount}+ clients nous font confiance`}
+                  className="text-3xl font-bold text-center"
+                  delay={15}
+                  duration={0.15}
+                  ease="power3.out"
+                  splitType="chars"
+                  from={{ opacity: 0, y: 40 }}
+                  to={{ opacity: 1, y: 0 }}
+                  threshold={0.1}
+                  rootMargin="-100px"
+                  textAlign="center"
+                />
+              </span>
+              <span className="md:hidden">{siteConfig.socialProof.clientCount}+ clients nous font confiance</span>
             </h2>
           </AnimatedContent>
 

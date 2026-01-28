@@ -8,7 +8,7 @@ import siteConfig from "@/lib/config";
 
 export function Pricing() {
   return (
-    <section className="py-12 md:py-20 bg-gray-50">
+    <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedContent distance={50} direction="vertical" duration={0.4}>
           <h2 className="text-3xl font-bold text-center mb-4">Nos tarifs</h2>

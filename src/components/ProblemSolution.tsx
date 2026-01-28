@@ -5,7 +5,7 @@ import siteConfig from "@/lib/config";
 
 export function ProblemSolution() {
   return (
-    <section className="py-12 md:py-20 bg-white">
+    <section className="py-12 md:py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-16">
           {/* Problèmes */}

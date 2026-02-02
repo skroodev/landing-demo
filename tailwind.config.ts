@@ -17,8 +17,15 @@ const config: Config = {
         accent: "#00cc99",
       },
       fontFamily: {
-        body: ["Inter", ...defaultTheme.fontFamily.sans],
-        heading: ["Poppins", ...defaultTheme.fontFamily.sans],
+        sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+        heading: ["var(--font-poppins)", ...defaultTheme.fontFamily.sans],
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
+      animation: {
+        'float': 'float 6s ease-in-out infinite',
+        'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
       },
     },
   },

@@ -43,10 +43,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="scroll-smooth">
+      <head>
+        {/* Preload hero image for faster LCP */}
+        <link
+          rel="preload"
+          href={siteConfig.hero.image.src}
+          as="image"
+          type="image/webp"
+          fetchPriority="high"
+        />
+      </head>
       <body
         className={`${inter.variable} ${poppins.variable} font-sans antialiased`}
       >
-        <div className="noise-overlay" aria-hidden="true" />
         {children}
         <ScrollToTop />
       </body>

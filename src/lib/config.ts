@@ -7,7 +7,7 @@ export const siteConfig = {
     type: "Plomberie",
     phone: "+33 6 07 08 09 10",
     email: "contact@plomberie-martin.fr",
-    address: "123 Rue de Paris, 06400 Cannes",
+    address: "55 Avenue de Cannes, 06160 Antibes, France",
     serviceArea: "Cannes, Antibes, Mougins, Grasse",
     keywords: "plombier cannes, dépannage 24/7, plomberie d'urgence",
     foundedYear: "2009",
@@ -345,7 +345,7 @@ export const siteConfig = {
     longitude: 7.0174,
     zoom: 14,
     markerTitle: "Plomberie Martin",
-    markerAddress: "123 Rue de Paris, 06400 Cannes, France",
+    markerAddress: "55 Avenue de Cannes, 06160 Antibes, France",
   },
 
   // FOOTER
@@ -353,7 +353,7 @@ export const siteConfig = {
     companyName: "Plomberie Martin SARL",
     phone: "+33 6 12 34 56 78",
     email: "contact@plomberie-martin.fr",
-    address: "123 Rue de Paris, 06400 Cannes",
+    address: "55 Avenue de Cannes, 06160 Antibes, France",
     certifications: ["RGE Certified", "Garantie Décennale", "Agrément Travaux"],
     socialLinks: {
       facebook: "https://facebook.com/plomberiemartin",
@@ -365,7 +365,7 @@ export const siteConfig = {
       { label: "Mentions légales", href: "#" },
       { label: "Conditions générales", href: "#" },
     ],
-    copyright: "© 2024 Plomberie Martin. Tous droits réservés.",
+    copyright: "© 2026 Plomberie Martin. Tous droits réservés.",
   },
 
   // SEO & METADATA

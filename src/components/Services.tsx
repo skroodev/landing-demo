@@ -84,7 +84,8 @@ export function Services() {
                           fill
                           className="object-cover transition-transform duration-700 group-hover:scale-110"
                           loading="lazy"
-                          unoptimized
+                          sizes="(max-width: 768px) 50vw, (max-width: 1024px) 50vw, 25vw"
+                          quality={75}
                         />
                         <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent" />
                       </div>
@@ -107,7 +108,8 @@ export function Services() {
                           fill
                           className="object-cover transition-transform duration-700 group-hover:scale-110"
                           loading="lazy"
-                          unoptimized
+                          sizes="(max-width: 768px) 50vw, (max-width: 1024px) 50vw, 25vw"
+                          quality={75}
                         />
                         <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent" />
                       </div>

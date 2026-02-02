@@ -3,8 +3,7 @@
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import AnimatedContent from "@/components/AnimatedContent";
-import CountUp from "@/components/CountUp";
-import SplitText from "@/components/SplitText";
+import CountUpLight from "@/components/CountUpLight";
 import siteConfig from "@/lib/config";
 import { Users, Star, Clock } from "lucide-react";
 
@@ -73,7 +72,7 @@ export function SocialProof() {
                   style={{ color: siteConfig.colors.primary }}
                 >
                   {stat.value !== null ? (
-                    <CountUp to={stat.value} separator="," duration={0.15} />
+                    <CountUpLight to={stat.value} separator="," duration={1.5} />
                   ) : (
                     stat.display
                   )}
@@ -90,22 +89,7 @@ export function SocialProof() {
         <div>
           <AnimatedContent distance={50} direction="vertical" duration={0.5}>
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              <span className="hidden md:inline">
-                <SplitText
-                  text={`${siteConfig.socialProof.clientCount}+ clients nous font confiance`}
-                  className="text-3xl md:text-4xl font-bold text-center"
-                  delay={15}
-                  duration={0.15}
-                  ease="power3.out"
-                  splitType="chars"
-                  from={{ opacity: 0, y: 40 }}
-                  to={{ opacity: 1, y: 0 }}
-                  threshold={0.1}
-                  rootMargin="-100px"
-                  textAlign="center"
-                />
-              </span>
-              <span className="md:hidden">{siteConfig.socialProof.clientCount}+ clients nous font confiance</span>
+              {siteConfig.socialProof.clientCount}+ clients nous font confiance
             </h2>
           </AnimatedContent>
 
@@ -152,6 +136,9 @@ export function SocialProof() {
                             alt={testimonial.author}
                             width={48}
                             height={48}
+                            sizes="48px"
+                            quality={75}
+                            loading="lazy"
                             className="rounded-full ring-2 ring-white shadow-md"
                           />
                           <div 

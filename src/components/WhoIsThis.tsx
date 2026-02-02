@@ -54,7 +54,7 @@ export function WhoIsThis() {
                     duration={0.4}
                     delay={index * 0.05}
                   >
-                    <Card className="glass-card border-0 p-5 rounded-xl transition-all duration-300 hover:translate-x-2 group">
+                    <Card className="glass-card border-0 p-5 rounded-xl transition-transform duration-300 hover:translate-x-2 group">
                       <div className="flex gap-4 items-start">
                         <div 
                           className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110"
@@ -97,7 +97,7 @@ export function WhoIsThis() {
                     duration={0.4}
                     delay={index * 0.05}
                   >
-                    <Card className="glass-card border-0 p-5 rounded-xl transition-all duration-300 hover:translate-x-2 group">
+                    <Card className="glass-card border-0 p-5 rounded-xl transition-transform duration-300 hover:translate-x-2 group">
                       <div className="flex gap-4 items-start">
                         <div 
                           className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110"

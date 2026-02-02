@@ -64,7 +64,7 @@ export function CTAFinal() {
               <Button
                 size="lg"
                 onClick={() => window.location.href = siteConfig.ctaFinal.primaryButton.link}
-                className="btn-premium text-white font-semibold px-10 py-7 text-lg w-full rounded-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3"
+                className="btn-premium text-white font-semibold px-10 py-7 text-lg w-full rounded-2xl transition-transform duration-300 hover:scale-105 flex items-center justify-center gap-3"
                 style={{ 
                   background: `linear-gradient(135deg, ${siteConfig.colors.secondary} 0%, #ff8533 100%)`,
                   boxShadow: `0 8px 30px ${siteConfig.colors.secondary}50`

@@ -113,7 +113,7 @@ export function Pricing() {
                 </div>
 
                 <Button
-                  className={`w-full btn-premium py-6 text-base font-semibold rounded-xl transition-all duration-300 hover:scale-105 ${
+                  className={`w-full btn-premium py-6 text-base font-semibold rounded-xl transition-transform duration-300 hover:scale-105 ${
                     pkg.highlighted ? "bg-white hover:bg-white/90" : ""
                   }`}
                   style={

@@ -47,7 +47,7 @@ export function ProblemSolution() {
                     delay={index * 0.08}
                   >
                     <div 
-                      className="flex gap-4 p-5 rounded-2xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:bg-white hover:shadow-md group"
+                      className="flex gap-4 p-5 rounded-2xl bg-white/80 backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:shadow-md group"
                     >
                       <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110">
                         <span className="text-xl">⚠️</span>
@@ -90,7 +90,7 @@ export function ProblemSolution() {
                     delay={index * 0.08}
                   >
                     <div 
-                      className="flex gap-4 p-5 rounded-2xl bg-white/80 backdrop-blur-sm transition-all duration-300 hover:bg-white hover:shadow-md group"
+                      className="flex gap-4 p-5 rounded-2xl bg-white/80 backdrop-blur-sm transition-colors duration-300 hover:bg-white hover:shadow-md group"
                     >
                       <div 
                         className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110"

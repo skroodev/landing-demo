@@ -108,7 +108,7 @@ export function Footer() {
                 href={siteConfig.footer.socialLinks.facebook} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-12 h-12 rounded-xl flex items-center justify-center bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white transition-all duration-300 hover:scale-110"
+                className="w-12 h-12 rounded-xl flex items-center justify-center bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white transition-[transform,background-color,color] duration-300 hover:scale-110"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
@@ -117,7 +117,7 @@ export function Footer() {
                 href={siteConfig.footer.socialLinks.instagram} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-12 h-12 rounded-xl flex items-center justify-center bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white transition-all duration-300 hover:scale-110"
+                className="w-12 h-12 rounded-xl flex items-center justify-center bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white transition-[transform,background-color,color] duration-300 hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -126,7 +126,7 @@ export function Footer() {
                 href={siteConfig.footer.socialLinks.google} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="w-12 h-12 rounded-xl flex items-center justify-center bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white transition-all duration-300 hover:scale-110"
+                className="w-12 h-12 rounded-xl flex items-center justify-center bg-white/5 text-gray-300 hover:bg-white/10 hover:text-white transition-[transform,background-color,color] duration-300 hover:scale-110"
                 aria-label="Google Maps"
               >
                 <MapPinned className="w-5 h-5" />
@@ -147,6 +147,21 @@ export function Footer() {
         <div className="text-center">
           <p className="text-sm text-gray-400">
             {siteConfig.footer.copyright}
+          </p>
+        </div>
+
+        {/* Credits */}
+        <div className="text-center mt-4">
+          <p className="text-xs text-gray-500">
+            Design & développement par{" "}
+            <a 
+              href="https://www.linkedin.com/in/skroodev/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors duration-300"
+            >
+              skroo.dev
+            </a>
           </p>
         </div>
       </div>

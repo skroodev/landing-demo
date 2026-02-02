@@ -1,0 +1,5 @@
+# Browsers that we support
+# This removes legacy polyfills for older browsers
+
+defaults and fully supports es6-module
+maintained node versions

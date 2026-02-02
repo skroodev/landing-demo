@@ -1,20 +1,30 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import siteConfig from "@/lib/config";
 
 export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const rafRef = useRef<number | undefined>(undefined);
+
+  const handleScroll = useCallback(() => {
+    if (rafRef.current) return;
+    
+    rafRef.current = requestAnimationFrame(() => {
+      setScrolled(window.scrollY > 20);
+      rafRef.current = undefined;
+    });
+  }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [handleScroll]);
 
   return (
     <header 
@@ -67,7 +77,7 @@ export function Navigation() {
             ))}
             <Button
               onClick={() => window.location.href = `tel:${siteConfig.business.phone}`}
-              className="ml-4 btn-premium text-white font-semibold px-6 py-2 rounded-xl transition-all duration-300 hover:scale-105"
+              className="ml-4 btn-premium text-white font-semibold px-6 py-2 rounded-xl transition-transform duration-300 hover:scale-105"
               style={{ 
                 background: `linear-gradient(135deg, ${siteConfig.colors.secondary} 0%, #ff8533 100%)`,
                 boxShadow: `0 4px 15px ${siteConfig.colors.secondary}40`
